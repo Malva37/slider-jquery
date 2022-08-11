@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+section {
+    display: none;
+
+}
+
+section.activeSection {
+    display: block;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+figure>img {
+    width: 350px;
+    height: 350px;
+}
+
+.arrows a {
+    width: 5%;
+    height: 20px;
+    position: fixed;
+    top: 45%;
+}
+
+.next {
+    position: relative;
+    left: 90%;
+}
+
+.prev {
+    position: relative;
+    left: 5%;
+}
+
+.dots {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    position: fixed;
+    left: 45%;
+    bottom: 5%;
+
+}
+
+.dots a {
+    width: 25px;
+    height: 25px;
+    background-color: rgb(168, 176, 176);
+    border-radius: 50%;
+}
+
+.dots a.active {
+    background-color: grey;
+}
